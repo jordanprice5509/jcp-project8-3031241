@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head> 
+   <!--
+      JavaScript 6th Edition  v 1.16
+     
+
+      Individual Project
+  
+      Author: Jordan Price
+      Date:   10/21/17
+
+      Filename: page2.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0">
+   <title>Bouncy House Sales</title>
+   <link rel="stylesheet" href="styles2.css" />
+   <link href="https://fonts.google.com/specimen/Josefin+Sans" rel="stylesheet" type="text/css">
+  
+  <!--Changed font-->
+
+</head>
+
+<body>
+  <div id="container">
+    <header>
+        <h1>
+          <img src="https://cdn.glitch.com/509d0d81-5905-4140-b39e-6de276b411b9%2FWebp.net-resizeimage.png?1505261578900"/>
+          Bouncy House Sales
+        </h1>
+    </header>
+    
+    <!--Added an image for my company and my company name-->
+
+    <nav>
+      <ul>
+           <li><a href="index.html">Bounces</a></li>
+           <li id="currentpage"><a href="#">Buy</a></li>
+           <li id="page3"><a href="page3.html">About Us</a></li>
+           <li id="page4"><a href="page4.html">Contact Us</a></li>
+           <li id="page5"><a href="page5.html">Web Security</a></li>
+       
+       <!--Changed the names of the navigation tabs to reflect the content on the page-->
+       <!--Added a fifth page for Web Security-->
+       
+      </ul>      
+    </nav>
+    
+   <article>
+      <h2>Bounce Selections</h2>
+      <form>
+         <input type="checkbox" id="item1" value="1200" />
+         <label for="item1">Crayon bounce ($1200)</label>
+         <input type="checkbox" id="item2" value="2500" />
+         <label for="item2">Bounce with Slide ($2500)</label>
+         <input type="checkbox" id="item3" value="2800" />
+         <label for="item3">Fire Station ($2800)</label>
+         <input type="checkbox" id="item4" value="3100" />
+         <label for="item4">Obstacle Course ($3100)</label>
+         <input type="checkbox" id="item5" value="3500" />
+         <label for="item5">Wet Slide ($3500)</label>
+         <input type="button" value="Submit" id="sButton" />
+      </form>
+     
+    <!--Made selections for inflatables available for sale with thier prices-->
+     
+      <div>
+        <p id="subtotal"></p>
+        <p2 id="tax"></p2>
+        <p3 id="total"></p3>
+      </div>
+     
+     <!--Added a space for the dollar amounts to show when submit button is clicked-->
+     
+   </article>
+   <footer>
+      <p>Bouncy House Sales &bull; Salisbury, Maryland</p>
+   </footer>
+    
+    <!--Added my company name-->
+    
+ </div>
+<script src="script.js"></script>
+</body>
+</html>

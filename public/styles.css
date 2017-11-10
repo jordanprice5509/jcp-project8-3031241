@@ -1,0 +1,318 @@
+/*  JavaScript 6th Edition v 1.16
+ 
+    Large format style sheet
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 960px;
+   background: #9f47dc;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
+   position: relative;
+}
+
+    /* changed background color to purple*/
+
+ol, ul {
+   list-style: none;
+}
+
+blockquote, q {
+   quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+a:link, a:visited {
+   text-decoration: none;
+   color: #9f47dc;
+}
+
+     /*changed the color of the text on the navigation tabs to purple*/
+
+a:hover {
+   text-decoration: underline;
+   color: #616161;
+}
+
+      /* changed color of the text on the navigation bar when mouse hovers over to gray*/
+
+a:active {
+   text-decoration: bold;
+   color: black;
+}
+
+      /* changed color of the text on the navigation bar when mouse clicks to black*/
+
+/* container */
+#container {
+   background: black;
+   padding-right: 50px;
+}
+
+    /* changed navy background to black and added padding to the right side of the page*/
+
+/* page header */
+header {
+   background: #9f47dc;
+   font-size: 48px;
+   width: 110%;
+   text-align: center;
+   padding-right: 50px
+}
+
+    /* changed background color to purple; added width 100% so it extends to the side to 
+       match other purple; aligned the text to the center; added padding to the right side. */
+
+/* navigation */
+nav {
+   font-size: 16px;
+   font-family: "raleway", ;
+   padding-top: 25px;
+   background: black;
+   float: right;
+   width: 660px;
+}
+
+    /* changed font of navigation tabs; reduced the padding on top; changed background color
+       to black; reduced the overall width */
+
+nav ul {
+   text-align: center;
+}
+
+nav ul li {
+   display: inline-block;
+   padding: 8px 15px;
+   margin: 0 3px;
+   background: lightgray;
+   -moz-border-radius-topleft: 7px;
+   -moz-border-radius-topright: 7px;
+   -webkit-border-top-left-radius: 7px;
+   -webkit-border-top-right-radius: 7px;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+   -webkit-box-shadow: 2px -2px 0px lightgray,
+                       2px 0px 0px lightgray;
+   -moz-box-shadow:    2px -2px 0px lightgray,
+                       2px 0px 0px lightgray;
+   box-shadow:         2px -2px 0px lightgray,
+                       2px 0px 0px lightgray;
+}
+
+    /* Changed the color of naviagtion tabs and their shadows to light gray. */
+
+nav ul #currentpage {
+   background: lightgray;
+   color: white;
+}
+
+    /* changed color of first navigation tab to light gray*/
+
+/* main content */
+article {
+   width: 855px;
+   float: right;
+   font-family: "raleway",;
+   text-align: left;
+   background: white;
+   padding: 10px;
+   padding-right: 20px;
+   border-top: 0px solid lightgray;
+}
+
+    /* changed font; added padding to the right side; reduced the top border and changed
+       the color to light gray */
+
+article h2 {
+   font-family: "raleway",;
+   font-size: 1.2em;
+   font-weight: bold;
+   text-align: center;
+   margin-bottom: 6px;;
+}
+
+   /* changed font */
+
+article p {
+   margin-bottom: 6px;
+   line-height: 1.2em;
+   padding-top: 10px;
+}
+
+    /* added padding to the top */
+
+article p2 {
+  margin-bottom: 6px;
+  line-height: 1.2em;
+  padding-top: 10px;
+  color: #9f47dc
+}
+ 
+  /*changed color to purple*/
+
+article table {
+   margin: 0 auto;
+}
+
+article th, article td {
+   border: 1px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+   padding-right: 20px;
+}
+
+    /* added padding to the right side */
+
+article th {
+   font-weight: bold;
+   background: black;
+}
+
+    /*chnaged color to black*/
+
+/* form */
+form {
+   width: 560px;
+   margin: 0 auto;
+}
+
+form fieldset{
+   border: none; 
+   background: lightgray;
+   position: relative;
+}
+
+    /*changed colorto light gray*/
+
+form legend {
+   font-size: 1.5em;
+   font-weight: bold;
+   margin: 10px;
+}
+
+form legend span {
+   position: relative;
+   top: 20px;
+}
+
+form label {
+   display: block;
+   font-size: 1.2em;
+   width: 480px;
+   text-align: right;
+}
+form label p {
+   float: left;
+   width: 100%;
+   text-align: right;
+}
+
+form label p:nth-child(2) {
+   font-size: 0.8em;
+}
+
+form input {
+   padding: 1%;
+   background: #333;
+   color: #BBB;
+   border: none;
+   font: normal 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+   float: right;
+   clear: both;
+   width: 60px;
+   margin-left: 10px;
+   margin-bottom: 20px;
+   position: relative;
+   top: -0.4em;
+}
+
+form input[type="checkbox"] {
+   position: static;
+}
+
+/* sidebar */
+aside {
+   float: left;
+   color: black;
+   top: 190px;
+   padding: 30px;
+}
+
+/*changed color to black*/
+
+aside p {
+   background: lightgray;
+   border: 0px solid #643B0F;
+   padding: 10px;
+   text-align: right;
+   font-size: 1.2em;
+}
+
+    /* changed background color to light gray */
+
+aside #estimate {
+   font-weight: bold;
+}
+
+/* footer */
+footer {
+   background: lightgray;
+   width: 105.5%;
+   clear: both;
+   font-size: 14px;
+   padding: 10px;
+}
+
+   /* changed background color to light gray */
+
+footer p {
+   text-align: center;
+}
