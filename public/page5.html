@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 6th Edition  v 1.16
+     
+
+      Individual Project
+  
+      Author: Jordan Price
+      Date:   10/21/17
+
+      Filename: page 5.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0">
+   <title>Bouncy House Sales</title>
+  
+<!--Changed the title that shows on the tab of the browser-->
+  
+   <link rel="stylesheet"  href="styles.css" />
+   <link href="https://fonts.google.com/specimen/Josefin+Sans" rel="stylesheet" type="text/css"> 
+
+<!--Changed font-->
+  
+  </head>
+
+<body>
+   <div id="container">
+      <header>
+         <h1>
+            <img src="https://cdn.glitch.com/509d0d81-5905-4140-b39e-6de276b411b9%2FWebp.net-resizeimage.png?1505261578900" />
+            Bouncy House Sales 
+        </h1>
+      </header>
+     
+<!--Added an image for my company and my company name-->
+
+	  <nav>
+ 
+	       <ul>
+            <li id="currentpage"><a href="index.html">Bounces</a></li>
+            <li id="page2"><a href="/page2.html">Buy</a></li>
+            <li id="page3"><a href="/page3.html">About Us</a></li>
+            <li id="page4"><a href="/page4.html">Contact Us</a></li>
+            <li id="page5"><a href="#">Web Security</a></li>
+	       </ul>
+      
+<!--Changed the names of the navigation tabs to reflect the content on the page-->
+<!--Added a fifth page for Web Security-->
+      
+      </nav>
+ 	          
+      <article>
+         <h2>Computer and Browser Information</h2>
+           <p></p>
+           <p></p>
+           <p></p>
+           <p></p>
+           <p></p>
+           <p></p>
+           <p></p>
+           <p></p>
+      </article>
+     
+<!-- Changed the header name. Added lines for the properties about the computer and browser, which are below. -->
+     
+      <article>
+         <h2>Using the Web Safely</h2>
+         <p>The following website provides 10 tips on how to stay safe online, including passwords, online shopping, scams, etc.</p>
+           <p2> <a target = "_blank" href="https://securingtomorrow.mcafee.com/consumer/consumer-threat-notices/10-tips-stay-safe-online/"> 10 Tips to Stay Safe Online </a> </p2>
+         <p>This website provides information on browsing the web safely. It covers updating your software, security settings, cybercrime, etc.</p>
+           <p2> <a target = "_blank" href="https://www.staysmartonline.gov.au/protect-yourself/do-things-safely/browsing-web-safely"> Browsing the web safely </a></p2>
+         <p>This last website also provides information on using the internet safely. It includes the risks of going online, how to know if a website is secure, what cookies are and how they work, and more. </p>
+           <p2> <a target = "_blank" href="https://www.getsafeonline.org/protecting-your-computer/safe-internet-use/"> Safe Internet Use </a></p2>
+      </article>
+     
+<!-- Added a header for a new article. Added brief descriptions and links to websites. Under styles.css, I made it so the links to websites show up as purple, instead of black, so it is easier to see the link. -->
+    
+      <footer>
+         <p>Bouncy House Sales &bull; Salisbury, Maryland</p>
+      </footer>
+     
+<!--Added my company name-->
+     
+   </div>
+     <script>
+       "use scrict";
+          document.getElementsByTagName("p") [0].innerHTML =
+            "Web browser name: " + navigator.appName;
+          document.getElementsByTagName("p") [1].innerHTML =
+            "Web browser version: " + navigator.appVersion;
+          document.getElementsByTagName("p") [2].innerHTML =
+            "Operating platform: " + navigator.platform;
+          document.getElementsByTagName("p") [3].innerHTML =
+            "User agent: " + navigator.userAgent;
+          document.getElementsByTagName("p") [4].innerHTML =
+            "Screen Height: " + screen.height;
+          document.getElementsByTagName("p") [5].innerHTML =
+            "Screen Width: " + screen.width;
+          document.getElementsByTagName("p") [6].innerHTML =
+            "Screen Color Depth: " + screen.colorDepth;
+          document.getElementsByTagName("p") [7].innerHTML =
+            "Screen Pixel Depth: " + screen.pixelDepth;
+      </script>
+  <!-- Added the properties from the tables in the book about the computer and browser.-->
+  </body>
+</html>
